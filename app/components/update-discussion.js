@@ -7,7 +7,7 @@ export default Ember.Component.extend({
       category: this.get('category'),
       notes:this.get('notes'),
     };
-    this.sendAction('updateDiscuss', discuss, params)
+    this.sendAction('updateDiscuss', discuss, params);
     }
   }
 });

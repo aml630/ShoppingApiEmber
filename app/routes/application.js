@@ -10,7 +10,6 @@ export default Ember.Route.extend({
       this.transitionTo('/');
     },
     navLookup(params) {
-      console.log("application js")
       this.transitionTo('results', params.product);
     }
   }

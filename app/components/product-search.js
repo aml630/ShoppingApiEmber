@@ -6,7 +6,7 @@ export default Ember.Component.extend({
       var params = {
         product: this.get('product2')
       };
-      this.set('product', '')
+      this.set('product', '');
 
       this.sendAction('productLookup', params);
     }

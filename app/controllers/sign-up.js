@@ -8,7 +8,7 @@ export default Ember.Controller.extend({
       this.get('firebase').createUser({
         email: this.get('email') || '',
         password: this.get('password') || '',
-      }, (error, data) => {
+      }, (error) => {
         if (error) {
           console.log(error);
         } else {

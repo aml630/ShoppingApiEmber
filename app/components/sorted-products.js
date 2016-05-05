@@ -17,19 +17,19 @@ export default Ember.Component.extend({
       this.get('shoppingCart').add(product);
     },
     lowToHigh(){
-      this.set('sortBy', ['salePrice:desc'])
+      this.set('sortBy', ['salePrice:desc']);
     },
     highToLow(){
-      this.set('sortBy', ['salePrice:asc'])
+      this.set('sortBy', ['salePrice:asc']);
     },
     nameSort(){
-      this.set('sortBy', ['name:asc'])
+      this.set('sortBy', ['name:asc']);
     },
     nameSortAlt(){
-      this.set('sortBy', ['name:desc'])
+      this.set('sortBy', ['name:desc']);
     },
     storeSort(){
-      this.set('sortBy', ['thumbnailImage:desc'])
+      this.set('sortBy', ['thumbnailImage:desc']);
     }
   }
 });

@@ -16,18 +16,18 @@ export default Ember.Component.extend({
           if(splitAuthor[i] === "@"){
             break;
           }else {
-          newName += splitAuthor[i]
+          newName += splitAuthor[i];
           }
         }
         this.get('model.thumbnailImage');
-        var imageArr = []
+        var imageArr = [];
         imageArr.push(this.get("model.image"));
         imageArr.push(this.get("model.largeImage"));
         var imageUrl = imageArr.filter(function(element) {
           if (element !== undefined) {
             return element;
           }
-        })
+        });
         console.log(imageUrl[0]);
       var discussionParams = {
         author: newName,
@@ -42,7 +42,7 @@ export default Ember.Component.extend({
         notes:this.get('notes')? this.get('notes'):"",
         rank: 0,
         date: Date()
-      }
+      };
       console.log(discussionParams);
       this.sendAction('newDiscuss', discussionParams);
 

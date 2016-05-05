@@ -7,9 +7,9 @@ export default Ember.Component.extend({
     saveComment() {
       var firebase = this.get('firebase');
       console.log(firebase);
-      console.log(this.get('session'))
-      var author = firebase.repo.auth.authData_.password.email
-      var newImage = firebase.repo.auth.authData_.password.profileImageURL
+      console.log(this.get('session'));
+      var author = firebase.repo.auth.authData_.password.email;
+      var newImage = firebase.repo.auth.authData_.password.profileImageURL;
 
       var splitAuthor = author.split('');
       var newName = '';
@@ -18,7 +18,7 @@ export default Ember.Component.extend({
         if(splitAuthor[i] === "@"){
           break;
         }else {
-        newName += splitAuthor[i]
+        newName += splitAuthor[i];
         }
       }
       var params = {

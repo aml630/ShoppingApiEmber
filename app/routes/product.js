@@ -19,7 +19,7 @@ export default Ember.Route.extend({
       discuss.get('comments').addObject(newComment);
       newComment.save().then(function () {
         return discuss.save();
-      })
+      });
     },
     updateDiscuss(discuss, params){
       Object.keys(params).forEach(function(key) {
@@ -28,7 +28,7 @@ export default Ember.Route.extend({
         }
       });
       discuss.save();
-      this.transitionTo('discuss', discuss)
+      this.transitionTo('discuss', discuss);
     },
   }
 });

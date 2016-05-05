@@ -10,4 +10,4 @@ export default ToriiFirebaseAdapter.extend({
 
 export default FirebaseAdapter.extend({
   firebase: inject.service(),
-})
+});
