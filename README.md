@@ -1,5 +1,9 @@
 # Ember Shopping Cart
 
+## View Live
+
+http://aml630.github.io/ShoppingApiEmber
+
 ## Description
 Pull information from APIs and automatically save them to the database. Ability to add products to a cart and remove them. Working to be a price comparison app.
 
